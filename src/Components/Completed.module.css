@@ -1,0 +1,12 @@
+.completed {
+  opacity: .8;
+  color: #333;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.completed > * {
+  height: 20px;
+  line-height: 1.9;
+}

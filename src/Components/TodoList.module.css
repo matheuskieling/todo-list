@@ -1,0 +1,11 @@
+.todoList {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.todoList > * {
+  height: 20px;
+  line-height: 1.9;
+}
+

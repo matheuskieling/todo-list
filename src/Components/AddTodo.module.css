@@ -1,0 +1,30 @@
+.addtodo {
+  border: 2px solid #fb1;
+  box-shadow: 2px 2px 2px 0 #fea;
+  margin-right: 10px;
+  padding: .5rem 1rem;
+  margin-bottom: 20px;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.addtodo:hover,
+.addtodo:focus {
+  border: 2px solid #fa1;
+}
+
+.adicionar {
+  margin-right: 5px;
+}
+
+button {
+  border-color: transparent;
+  padding: .5rem 1rem;
+  background-color: #fb1;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+button:disabled {
+  opacity: .6;
+}
