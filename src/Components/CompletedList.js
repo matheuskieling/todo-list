@@ -25,7 +25,9 @@ const CompletedList = ({ completed, setCompleted, setTodoList, todoList }) => {
             name={idx}
             checked={completed.includes(todo)}
           />
-          <Todo todo={todo} />
+          <div className={styles.todo}>
+            <Todo todo={todo} />
+          </div>
         </div>
       ))}
     </div>

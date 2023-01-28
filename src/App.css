@@ -1,12 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 body {
   display: grid;
   grid-template-columns: 1fr auto;
   margin-left: 100px;
   margin-top: 50px;
+  --var-font-1: Poppins;
+  --var-font-2: Roboto;
 }
 
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--var-font-1);
   
 }
 .title {
@@ -16,12 +21,43 @@ h1 {
 h1::before {
   content: '';
   display: block;
-  height: 20px;
+  height: 1rem;
   width: 20px;
   background-color: #fb1;
   position: absolute;
-  top: 15px;
-  left: -10px;
+  top: 1.1rem;
+  left: -30px;
   z-index: -100;
   border-radius: .2rem;
+}
+
+.todoList,
+.completedList {
+  margin-left: 4rem;
+  color: #333;
+}
+
+.header {
+  margin-bottom: 4rem;
+  font-size: 3rem;
+}
+
+.adicionarwrapper {
+  margin-bottom: 4rem;
+  margin-left: 4rem;
+}
+
+.h2 {
+  color: #333;
+}
+
+.listsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 40rem) {
+  .listsWrapper {
+    grid-template-columns: 1fr;
+  }
 }

@@ -6,6 +6,9 @@
   margin-bottom: 20px;
   outline: none;
   font-family: Arial, Helvetica, sans-serif;
+  width: 13.5rem;
+  height: 1.3rem;
+  border-radius: 4px;
 }
 .addtodo:hover,
 .addtodo:focus {
@@ -14,17 +17,40 @@
 
 .adicionar {
   margin-right: 5px;
+  color: #000;
+  font-weight: bold;
+}
+
+.adicionar:hover,
+.adicionar:focus {
+  outline: none;
+  border: 2px solid #fa1;
 }
 
 button {
   border-color: transparent;
   padding: .5rem 1rem;
   background-color: #fb1;
-  color: white;
+  color: #333;
   font-weight: bold;
   margin-right: 5px;
+  cursor: pointer;
+  font-family: var(--var-font-2);
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+button:hover,
+button:focus {
+  background-color: #fc1;
+  outline: none;
 }
 
 button:disabled {
-  opacity: .6;
+  background-color: rgba(0,0,0,0.3);
+  opacity: .3;
+}
+
+button:disabled:hover {
+  cursor: default;
 }

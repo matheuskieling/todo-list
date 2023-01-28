@@ -4,9 +4,18 @@
   display: flex;
   gap: 5px;
   align-items: center;
+  position: relative;
 }
 
 .completed > * {
   height: 20px;
-  line-height: 1.9;
+  line-height: 1.3;
+}
+.checkmark {
+  accent-color: #fb1;
+}
+
+
+.todo {
+  text-decoration: line-through;
 }

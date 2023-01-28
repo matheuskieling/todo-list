@@ -27,31 +27,44 @@ function App() {
 
   return (
     <>
-      <div className="title">
-        <h1>Minha Lista</h1>
-      </div>
+      <h1 className="header">Todo List</h1>
 
-      <AddToDo
-        setTodoList={setTodoList}
-        todoList={todoList}
-        setCompleted={setCompleted}
-        completed={completed}
-      />
-      <TodoList
-        todoList={todoList}
-        setCompleted={setCompleted}
-        setTodoList={setTodoList}
-        completed={completed}
-      />
-      <div className="title">
-        <h1>Completed</h1>
+      <div className="adicionarwrapper">
+        <div>
+          <h1 className="h2 title">Adicionar Todo</h1>
+        </div>
+        <AddToDo
+          setTodoList={setTodoList}
+          todoList={todoList}
+          setCompleted={setCompleted}
+          completed={completed}
+        />
       </div>
-      <CompletedList
-        setTodoList={setTodoList}
-        todoList={todoList}
-        setCompleted={setCompleted}
-        completed={completed}
-      />
+      <div className="listsWrapper">
+        <div className="todoList">
+          <div className="title">
+            <h1>Minha Lista</h1>
+          </div>
+          <TodoList
+            todoList={todoList}
+            setCompleted={setCompleted}
+            setTodoList={setTodoList}
+            completed={completed}
+          />
+        </div>
+        <div className="completedList">
+          <div className="title">
+            <h1>Completed</h1>
+          </div>
+
+          <CompletedList
+            setTodoList={setTodoList}
+            todoList={todoList}
+            setCompleted={setCompleted}
+            completed={completed}
+          />
+        </div>
+      </div>
     </>
   );
 }
